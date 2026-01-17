@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;  
+  margin: 0;
+}
+body{
+    margin: 0px;
+}
+.imge{
+    border-radius: 50%;
+    height: 60px;
+    margin-top: 50px;
+    border: solid #79ba30;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.head-bar{
+    background-color: rgba(121, 186, 48, 0.83);
+    color: white;
+    display: flex;
+    padding-left: 36%;
+    padding-bottom: 50px;
+    /* margin-left: 50%; */
+    /* gap: 10px; */
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(90, 147, 5);
+    /* padding-right: 5%; */
+}
+.sera{
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(217, 146, 33); */
+    margin: 50px;
+     /* width :300px; */
+     height: 100px;
+     gap:10px;
+}
+.search{
+    height: 80px;
+    width: 300px;
+    border: solid gray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.btn{
+    border: solid black;
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: rgb(165, 52, 163);
+    font-weight: bold;
+    transition: transform 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* hide/show helpers */
+.hidden {
+  display: none;
+}
+
+/* spinner */
+.btn:active .btn-loader{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.5s linear infinite;
+    vertical-align: middle;
+    margin-left: 10px;
+    display: inline-block;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* main */
+ main {
+          height: 250px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(255, 0, 89);
+          background-color:  rgb(2, 198, 252);
+          border: solid black;
+          ;
+      }
+.weather-container {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          height: 5rem;
+      }
+
+.location {
+          font-size: 2rem;
+          margin-bottom: 1.6rem;
+      }
+
+.condition {
+          text-align: center;
+      }
+/* footer */
+footer{
+    color: white;
+    background-color: black;
+    padding: 32px;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: px; */
+    font-size: medium;
+}
